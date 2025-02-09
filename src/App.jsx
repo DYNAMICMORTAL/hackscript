@@ -8,7 +8,7 @@ function App() {
       <p>font checking text</p>
     </div>
   );  
-  return <div className="text-red-500">Hello</div>;
+  // return <div className="text-red-500">Hello</div>;
 }
 
 export default App;
