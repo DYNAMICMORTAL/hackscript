@@ -1,4 +1,16 @@
-@import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "f1";
+  src: url("./assets/fonts/Formula1-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "f1-bold";
+  src: url("./assets/fonts/Formula1-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "f1-wide";
+  src: url("./assets/fonts/Formula1-Wide.woff") format("woff");
+}
