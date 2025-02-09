@@ -1,14 +1,14 @@
-import Navbar from './components/Navbar';
+import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div className="App bg-black text-white">
-      <Navbar />
-      <h1>hackscript 6.0</h1>
-      <p>font checking text</p>
+    <div className="bg-black text-secondary h-screen w-full">
+      <Sidebar />
+      <Hero />
     </div>
-  );  
-  // return <div className="text-red-500">Hello</div>;
+  );
 }
 
 export default App;
