@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "f1";
   src: url("./assets/fonts/Formula1-Regular.woff") format("woff");

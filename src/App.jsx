@@ -5,7 +5,7 @@ import About from "./components/About";
 
 function App() {
   return (
-    <div className="bg-black text-secondary h-screen w-full">
+    <div className="bg-black text-secondary h-screen w-full font-f1">
       <Sidebar />
       <Hero />
       <About />
