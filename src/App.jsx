@@ -2,6 +2,7 @@ import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Timeline from "./components/Timeline";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Sidebar />
       <Hero />
       <About />
+      <Timeline />
     </div>
   );
 }
