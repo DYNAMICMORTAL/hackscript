@@ -1,71 +1,105 @@
-// import React from "react";
+import React from "react";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"; // Import social media icons
 
-// const Location = React.forwardRef((props, ref) => {
-//   return (
-//     <div ref={ref} className="min-h-screen bg-black py-20 px-4">
-//       <div className="max-w-6xl mx-auto text-center">
-//         <h2 className="text-5xl font-bold text-red-500 mb-12 drop-shadow-glow">
-//           Race Location
-//         </h2>
-//         <div className="bg-black p-8 rounded-lg border border-red-500 drop-shadow-glow">
-//           <h3 className="text-2xl text-white mb-4">
-//             A.P. Shah Institute of Technology
-//           </h3>
-//           <p className="text-gray-400 mb-8">
-//             Join us at the heart of technology and innovation
-//           </p>
-//           <div className="relative w-full overflow-hidden rounded-lg aspect-video">
-//             <iframe
-//               title="A.P. Shah Institute of Technology Location"
-//               className="absolute top-0 left-0 w-full h-full"
-//               loading="lazy"
-//               allowFullScreen
-//               referrerPolicy="no-referrer-when-downgrade"
-//               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.4808558470863!2d72.96044647464407!3d19.174157748235654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b92103c0891b%3A0x9ae5aa84812d529c!2sA.P.%20Shah%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1707659258294"
-//             ></iframe>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// });
+const Formula1Footer = () => {
+  return (
+    <footer className="bg-black text-white py-10 relative overflow-hidden">
+      <div className="w-[90%] max-w-5xl mx-auto flex flex-col gap-2 md:flex-row justify-between items-start p-6 bg-opacity-80 bg-gray-900 rounded-2xl shadow-lg transition-transform transform hover:shadow-xl">
+        {/* Left Section - Event Info */}
+        <div className="w-full md:w-1/2 space-y-4">
+          <h3 className="text-2xl md:text-3xl font-bold text-red-600 uppercase">
+            Venue
+          </h3>
+          <p className="text-gray-300 text-sm md:text-base">
+            A. P. Shah Institute Of Technology <br />
+            Survey No, 12, Ghodbunder Rd, opp. Hypercity Mall Bhawani Nagar,
+            Kasarvadavali, Thane West, Thane, Maharashtra 400615
+          </p>
+          <p className="text-gray-300 text-sm">
+            📧{" "}
+            <a
+              href="mailto:hackwave@apsit.edu.in"
+              className="text-red-500 hover:text-white transition"
+            >
+              hackwave@apsit.edu.in
+            </a>
+          </p>
+          <p className="text-gray-300 text-xs md:text-sm">
+            📞 Rohan Waghode:{" "}
+            <a
+              href="tel:+917506443811"
+              className="text-red-500 hover:text-white"
+            >
+              +91 75064 43811
+            </a>{" "}
+            <br />
+            📞 Manas Nanivadekar:{" "}
+            <a
+              href="tel:+918104030064"
+              className="text-red-500 hover:text-white"
+            >
+              +91 81040 30064
+            </a>{" "}
+            <br />
+            📞 Athul Nair:{" "}
+            <a
+              href="tel:+917718979938"
+              className="text-red-500 hover:text-white"
+            >
+              +91 77189 79938
+            </a>
+          </p>
 
-// export default Location;
-
-
-
-
-
-
-import React from 'react';
-import './Location.css';
-
-const Location = React.forwardRef((props, ref) => {
-    return (
-        <div ref={ref} className="race-location-container">
-            <div className="race-location-content">
-                <h2 className="race-location-title">Race Location</h2>
-                <div className="location-info-container">
-                    <h3 className="location-name">A.P. Shah Institute of Technology</h3>
-                    <p className="location-description">
-                        Join us at the heart of technology and innovation
-                    </p>
-                    <div className="map-container">
-                        {/* Google Maps Embed */}
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.3294904130917!2d72.96466957521017!3d19.268032481976505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bba2e15f6c7b%3A0x20e1357d640bef7e!2sA.%20P.%20Shah%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1739218486507!5m2!1sen!2sin"
-                            width="600"
-                            height="450"
-                            style={{ border: 0 }}
-                            allowFullScreen
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                        ></iframe>
-                    </div>
-                </div>
-            </div>
+          {/* Social Icons */}
+          <div className="flex space-x-4 mt-4">
+            <a
+              href="#"
+              className="text-red-500 text-2xl hover:text-white transition"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="#"
+              className="text-red-500 text-2xl hover:text-white transition"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="#"
+              className="text-red-500 text-2xl hover:text-white transition"
+            >
+              <FaTwitter />
+            </a>
+          </div>
         </div>
-    );
-});
 
-export default Location;
+        {/* Right Section - Google Map */}
+        <div className="w-full md:w-1/2 mt-6 md:mt-0">
+          <h3 className="text-2xl md:text-3xl font-bold text-red-600 uppercase mb-3">
+            Event Location
+          </h3>
+          <iframe
+            className="w-full h-48 md:h-60 rounded-lg shadow-md"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.329490413092!2d72.96466957441031!3d19.268032481976487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bba2e15f6c7b%3A0x20e1357d640bef7e!2sA.%20P.%20Shah%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1739259488677!5m2!1sen!2sin"
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+
+      {/* Racing Track & Effects */}
+      <div className="absolute bottom-[-30px] w-full flex justify-center items-center">
+        <div
+          className="w-[60px] md:w-[80px] h-[30px] md:h-[40px] bg-cover bg-center shadow-lg transform rotate-45 animate-spin"
+          style={{
+            backgroundImage:
+              "url('https://upload.wikimedia.org/wikipedia/commons/d/d3/Checkered_flag.svg')",
+          }}
+        ></div>
+        <div className="absolute w-full h-[8px] md:h-[10px] bg-gradient-to-r from-red-600 via-white to-red-600 animate-pulse"></div>
+      </div>
+    </footer>
+  );
+};
+
+export default Formula1Footer;

@@ -7,7 +7,7 @@ import Location from "./components/Location";
 import Prize from "./components/Prize";
 import FAQ from "./components/FAQ";
 import ScrollSpeedIndicator from "./components/ScrollSpeedIndicator";
-
+import Formula1Footer from "./components/Location";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Timeline />
       <Prize />
       <FAQ />
-      <Location />
+      <Formula1Footer />
       {/* add location in the footer   */}
     </div>
   );

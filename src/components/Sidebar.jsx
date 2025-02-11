@@ -1,6 +1,15 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, Home, Clock, Trophy, Info, CircleHelp, Contact } from "lucide-react";
+import {
+  Menu,
+  X,
+  Home,
+  Clock,
+  Trophy,
+  Info,
+  CircleHelp,
+  Contact,
+} from "lucide-react";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +34,7 @@ const Sidebar = () => {
       {/* Sidebar Toggle Button */}
       <button
         onClick={toggleSidebar}
-        className="fixed top-5 right-5 z-50 text-sm md:text-lg text-secondary bg-primary p-2 md:p-3 lg:p-4 rounded-full shadow-lg transition-all duration-500"
+        className="fixed top-5 right-5 z-[10000] text-sm md:text-lg text-secondary bg-primary p-2 md:p-3 lg:p-4 rounded-full shadow-lg transition-all duration-500"
       >
         {isOpen ? (
           <X size={20} className="lg:scale-150 md:scale-125" />
@@ -42,7 +51,7 @@ const Sidebar = () => {
         className="fixed top-0 right-0 w-full h-screen bg-background text-secondary flex flex-col justify-center items-center z-40"
       >
         {/* Navigation Items */}
-        <nav className="space-y-6 text-2xl font-semibold">
+        <nav className="mt-10 space-y-6 text-2xl font-semibold">
           {navItems.map((item, index) => (
             <a
               key={index}

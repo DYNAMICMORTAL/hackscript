@@ -45,7 +45,12 @@ export default function About() {
             key={idx}
             initial={{ y: "60%", opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ ease: "easeInOut", duration: 1, delay: idx * 0.2 }}
+            transition={{
+              type: "spring",
+              duration: 1,
+              delay: idx * 0.2,
+              damping: "8",
+            }}
           >
             <img
               src={o}

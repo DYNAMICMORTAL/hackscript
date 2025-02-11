@@ -1,14 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-function SponsorCard({ sponsor }) {
+function SponsorCard({ sponsor, index }) {
   const { name, image } = sponsor;
   return (
     <motion.div
       className="flex flex-col items-center justify-center bg-white text-background p-4 rounded-md cursor-pointer w-56"
-      initial={{ opacity: 0, x: "-60%", scale: 1 }}
+      initial={{ opacity: 0, x: index == 0 ? "-60%" : "60%", scale: 1 }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ ease: "easeIn", duration: 0.5 }}
+      transition={{ type: "spring", duration: 0.5, damping: 8 }}
       exit={{ scale: 0 }}
     >
       <img src={image} />
@@ -27,9 +27,9 @@ export default function Sponsors() {
       <div className="text-xl underline underline-offset-8 mb-5 p-6 pt-10">
         Our Sponsors
       </div>
-      <div className="grid grid-cols-1 p-2 md:p-4 md:grid-cols-2 gap-2 md:gap-4">
+      <div className="grid grid-cols-1 p-2 md:p-4 md:grid-cols-2 md:justify-around gap-2 md:gap-4">
         {sponsors.map((sponsor, index) => (
-          <SponsorCard sponsor={sponsor} key={index} />
+          <SponsorCard sponsor={sponsor} key={index} index={index} />
         ))}
       </div>
     </>
