@@ -1,45 +1,81 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+import './Hero.css';
 
 export default function Hero() {
-  return (
-    <div className="min-h-screen font-f1 flex flex-col justify-center items-center h-full px-2 md:px-0">
-      {/* Background video */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src="src/assets/background1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/85"></div>
+  const calculateTimeLeft = () => {
+    const difference = +new Date('2025-03-07T08:00:00') - +new Date();
+    let timeLeft = {};
 
-      {/* Content */}
-      <div className="relative space-y-2 md:space-y-4 font-f1 text-white text-center">
-        <div className="flex md:flex-col gap-2 flex-row items-center justify-center">
-          <img src="src/assets/logos/apsit_Logo.png" className="w-12 md:w-32" />
-          <div>
-            <div className="text-[0.8rem] md:text-xl">
-              A. P. Shah Institute of Technology
-            </div>
-            <div className="text-xs md:text-lg">presents</div>
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60)
+      };
+    }
+
+    return timeLeft;
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  });
+
+  return (
+    <div className="hero-container">
+      <div className="navigation">
+        <div className="leftContainer">
+          <div className="leftHalf">
+            <img src="../src/assets/logos/apsit_Logo.png" alt="APSIT Logo" />
+            <img src="../src/assets/logos/Black-Transparent.png" alt="Hackscript Logo" />
+          </div>
+          <div className="rightHalf">
+            <h3 className="byText">A.P. Shah Institute of Technology, Thane</h3>
           </div>
         </div>
-        <div className="text-3xl md:text-5xl font-f1-bold">Hackscript 6.0</div>
-        <div className="text-sm md:text-lg mb-2">Code at Full Throttle!</div>
-        <button
-          type="button"
-          className="px-4 py-2 bg-primary rounded-md text-sm"
-        >
-          Register Now
-        </button>
-        <div className="text-xl md:text-2xl">
-          8<sup>th</sup> & 9<sup>th</sup> March
+        <div className="rightContainer">
         </div>
       </div>
+      <div className="verticalDiv">
+        <div className="heroSection">
+          <div className="leftHero">
+            <div className="heroText">
+              <h3 className="heroSubtitle">Code at <br />FULL <span>THROTTLE!</span></h3>
+            </div>
+            <div className="countdown">
+              <div className="time">
+                {timeLeft.days} <span>Days</span>
+              </div>
+              <div className="time">
+                {timeLeft.hours} <span>Hours</span>
+              </div>
+              <div className="time">
+                {timeLeft.minutes} <span>Minutes</span>
+              </div>
+              <div className="time">
+                {timeLeft.seconds} <span>Seconds</span>
+              </div>
+            </div>
+            <div className="registerButtonContainer">
+              <a href="https://example.com" className="registerButton">Register Now</a>
+            </div>
+          </div>
+          <div className="rightHero">
+            <img src="/heroGIF2.gif" alt="" />
+          </div>
+        </div>
+      </div>
+      {/* <div className="secondSection">
+        <h2 className="community">Our Team</h2>
+        lorem800
+      </div> */}
     </div>
   );
 }

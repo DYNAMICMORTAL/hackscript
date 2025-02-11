@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: 'Formula1-Regular';
+    src: url('../assets/font/Formula1-Regular.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Formula1-Bold';
+    src: url('../assets/font/Formula1-Bold.otf') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Formula1-Wide';
+    src: url('../assets/font/Formula1-Wide.otf') format('woff');
+  }
+  body, html {
+    background: #000;
+    height: 100%;
+    width: 100%;
+    font-family: 'Formula1-Regular', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    width: 100%;
+    padding: 10px 20px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .leftContainer {
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+  .leftContainer, .rightContainer {
+    display: flex;
+    align-items: center;
+  }
+  .leftHalf {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+  .leftHalf img {
+    width: 80px;
+    margin-right: 10px;
+  }
+  .byText {
+    color: #fff;
+    font-family: 'Formula1-Regular', sans-serif;
+    font-weight: 200;
+    font-size: 1.25em;
+  }
+  .verticalDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heroSection {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  }
+  .heroSubtitle {
+    font-family: 'Formula1-Bold', sans-serif;
+    font-size: 75px;
+    line-height: 70px;
+  }
+  .countdown {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .time {
+    font-family: 'Formula1-Bold', sans-serif;
+    font-size: 50px;
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  .time span {
+    display: block;
+    font-size: 20px;
+    font-family: 'Formula1-Regular', sans-serif;
+  }
+  
+  .registerButtonContainer {
+    margin-top: 20px;
+  }
+  
+  .registerButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Formula1-Bold', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    background-color: #ff0000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .registerButton:hover {
+    background-color: #cc0000; 
+    color: #fff;
+  }
+  .leftHero {
+    width: 50vw;
+    margin-right: 50px;
+  }
+  .rightHero img{
+    width: 40vw;
+  }
+
+  .hero-container {
+    background-image: url('../assets/HACKSCRIPT.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

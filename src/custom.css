@@ -1,0 +1,39 @@
+/* Import custom fonts */
+@font-face {
+  font-family: 'Formula1-Bold';
+  src: url('./assets/font/Formula1-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Formula1-Regular';
+  src: url('./assets/font/Formula1-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Formula1-Wide';
+  src: url('./assets/font/Formula1-Wide.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Formula1-Regular', sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  font-family: 'Formula1-Bold', sans-serif;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5;
+  font-family: 'Formula1-Wide', sans-serif;
+}
