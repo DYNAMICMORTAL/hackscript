@@ -77,7 +77,7 @@ const Timeline = () => {
                     }
                 });
             },
-            { threshold: 0.85 } // Adjust how much of the section needs to be visible (0.6 = 60%)
+            { threshold: 0.8 } // Adjust how much of the section needs to be visible (0.6 = 60%)
         );
 
         sections.forEach((section) => observer.observe(section));
@@ -306,7 +306,7 @@ const Timeline = () => {
                         {isMobile && (
                             <foreignObject x="50" y={mobileTimelineEvents[currentLap].y - 40} width="200" height="100">
                                 <motion.div
-                                    className="bg-black/90 p-3 backdrop-blur-sm rounded-lg border border-red-600 shadow-xl"
+                                    className="bg-black/90 p-3 backdrop-blur-sm rounded-lg border border-primary shadow-xl"
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                 >
@@ -336,7 +336,7 @@ const Timeline = () => {
                                         <motion.div
                                             initial={{ opacity: 0, y: 10 }}
                                             animate={{ opacity: 1, y: 0 }}
-                                            className="bg-black/90 p-4 md:p-3 backdrop-blur-sm rounded-lg border border-red-600 shadow-xl"
+                                            className="bg-black/90 p-4 md:p-3 backdrop-blur-sm rounded-lg border border-primary shadow-xl"
                                         >
                                             <div className="text-sm font-bold text-red-400 mb-1">
                                                 LAP {event.id}
@@ -347,7 +347,7 @@ const Timeline = () => {
                                             <div className="text-sm text-gray-300">
                                                 {event.description}
                                             </div>
-                                            <div className="absolute -left-2 top-4 w-0 h-0 border-t-4 border-b-4 border-l-4 border-transparent border-l-red-600" />
+                                            <div className="absolute -left-2 top-4 w-0 h-0 border-t-4 border-b-4 border-l-4 border-transparent border-l-primary" />
                                         </motion.div>
                                     </foreignObject>
                                 )}

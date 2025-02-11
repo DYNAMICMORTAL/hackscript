@@ -14,6 +14,9 @@ export default {
         background: "#000000",
         accent: "#29999F",
       },
+      dropShadow: {
+        glow: "0 0 5px rgba(220, 38, 38, 0.7), 0 0 10px rgba(220, 38, 38, 0.5)",
+      },
     },
   },
   plugins: [],
