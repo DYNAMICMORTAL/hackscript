@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 
 export default function About() {
   const organizers = [
-    "src/assets/logos/csa_dept_logo.png",
-    "src/assets/logos/itsa_dept_logo.png",
-    "src/assets/logos/ds_dept_logo.png",
-    "src/assets/logos/aiml_dept_logo.png",
+    "logos/csa_dept_logo.png",
+    "logos/itsa_dept_logo.png",
+    "logos/ds_dept_logo.png",
+    "logos/aiml_dept_logo.png",
   ];
   return (
     <div

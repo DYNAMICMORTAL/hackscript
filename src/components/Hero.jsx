@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import './Hero.css';
+import React, { useState, useEffect } from "react";
+import "./Hero.css";
 
 export default function Hero() {
   const calculateTimeLeft = () => {
-    const difference = +new Date('2025-03-07T08:00:00') - +new Date();
+    const difference = +new Date("2025-03-07T08:00:00") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -11,7 +11,7 @@ export default function Hero() {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60)
+        seconds: Math.floor((difference / 1000) % 60),
       };
     }
 
@@ -33,21 +33,23 @@ export default function Hero() {
       <div className="navigation">
         <div className="leftContainer">
           <div className="leftHalf">
-            <img src="../src/assets/logos/apsit_Logo.png" alt="APSIT Logo" />
-            <img src="../src/assets/logos/Black-Transparent.png" alt="Hackscript Logo" />
+            <img src="logos/apsit_Logo.png" alt="APSIT Logo" />
+            <img src="logos/Black-Transparent.png" alt="Hackscript Logo" />
           </div>
           <div className="rightHalf">
             <h3 className="byText">A.P. Shah Institute of Technology, Thane</h3>
           </div>
         </div>
-        <div className="rightContainer">
-        </div>
+        <div className="rightContainer"></div>
       </div>
       <div className="verticalDiv">
         <div className="heroSection">
           <div className="leftHero">
             <div className="heroText">
-              <h3 className="heroSubtitle">Code at <br />FULL <span>THROTTLE!</span></h3>
+              <h3 className="heroSubtitle">
+                Code at <br />
+                FULL <span>THROTTLE!</span>
+              </h3>
             </div>
             <div className="countdown">
               <div className="time">
@@ -64,7 +66,9 @@ export default function Hero() {
               </div>
             </div>
             <div className="registerButtonContainer">
-              <a href="https://example.com" className="registerButton">Register Now</a>
+              <a href="https://example.com" className="registerButton">
+                Register Now
+              </a>
             </div>
           </div>
           <div className="rightHero">
