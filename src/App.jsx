@@ -3,6 +3,9 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Timeline from "./components/Timeline";
+import Location from "./components/Location";
+import Prize from "./components/Prize";
+import FAQ from "./components/FAQ";
 
 function App() {
   return (
@@ -11,7 +14,10 @@ function App() {
       <Hero />
       <About />
       <Timeline />
-      <About />
+      <Prize />      
+      <FAQ />
+      <Location/> 
+      {/* add location in the footer   */}
     </div>
   );
 }
