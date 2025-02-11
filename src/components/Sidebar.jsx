@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, Home, Clock, Trophy, Info } from "lucide-react";
+import { Menu, X, Home, Clock, Trophy, Info, CircleHelp, Contact } from "lucide-react";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +16,8 @@ const Sidebar = () => {
     { title: "About", icon: <Info />, link: "#about" },
     { title: "Timeline", icon: <Clock />, link: "#timeline" },
     { title: "Prizes", icon: <Trophy />, link: "#prizes" },
+    { title: "FAQ", icon: <CircleHelp />, link: "#faq" },
+    { title: "Contact US", icon: <Contact />, link: "#contact" },
   ];
 
   return (
