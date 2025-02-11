@@ -6,17 +6,20 @@ import Timeline from "./components/Timeline";
 import Location from "./components/Location";
 import Prize from "./components/Prize";
 import FAQ from "./components/FAQ";
+import ScrollSpeedIndicator from "./components/ScrollSpeedIndicator";
+
 
 function App() {
   return (
     <div className="bg-black text-secondary h-screen w-full font-f1">
+      <ScrollSpeedIndicator />
       <Sidebar />
       <Hero />
       <About />
       <Timeline />
-      <Prize />      
+      <Prize />
       <FAQ />
-      <Location/> 
+      <Location />
       {/* add location in the footer   */}
     </div>
   );
