@@ -1,6 +1,7 @@
 import React from "react";
 import Sponsors from "./Sponsors";
 import { motion } from "framer-motion";
+import "./../index.css";
 
 export default function About() {
   const organizers = [
@@ -12,7 +13,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="mt-[80px] flex flex-col items-center justify-start bg-background p-4 md:p-4 overflow-y-hidden"
+      className="mt-[80px] flex flex-col items-center justify-start bg-background p-4 md:p-4 overflow-y-hidden about"
     >
       <div className="text-2xl md:text-4xl text-red-500 underline underline-offset-8 mb-5 p-6">
         About Hackscript 6.0

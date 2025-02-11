@@ -34,7 +34,7 @@ const Sidebar = () => {
       {/* Sidebar Toggle Button */}
       <button
         onClick={toggleSidebar}
-        className="fixed top-5 right-5 z-[10000] text-sm md:text-lg text-secondary bg-primary p-2 md:p-3 lg:p-4 rounded-full shadow-lg transition-all duration-500"
+        className="fixed top-3 right-5 z-[10000] text-sm md:text-lg text-secondary bg-primary p-2 md:p-3 lg:p-4 rounded-full shadow-lg transition-all duration-500"
       >
         {isOpen ? (
           <X size={20} className="lg:scale-150 md:scale-125" />

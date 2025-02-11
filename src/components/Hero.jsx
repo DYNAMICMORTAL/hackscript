@@ -30,18 +30,7 @@ export default function Hero() {
 
   return (
     <div className="hero-container">
-      <div className="navigation">
-        <div className="leftContainer">
-          <div className="leftHalf">
-            <img src="logos/apsit_Logo.png" alt="APSIT Logo" />
-            <img src="logos/Black-Transparent.png" alt="Hackscript Logo" />
-          </div>
-          <div className="rightHalf">
-            <h3 className="byText">A.P. Shah Institute of Technology, Thane</h3>
-          </div>
-        </div>
-        <div className="rightContainer"></div>
-      </div>
+      
       <div className="verticalDiv">
         <div className="heroSection">
           <div className="leftHero">
