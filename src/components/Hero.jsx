@@ -55,7 +55,7 @@ export default function Hero() {
               </div>
             </div>
             <div className="registerButtonContainer">
-              <a href="https://example.com" className="registerButton">
+              <a href="https://forms.gle/HXeknNFsoy6iWnXe8" className="registerButton">
                 Register Now
               </a>
             </div>

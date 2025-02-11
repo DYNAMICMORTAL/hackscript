@@ -12,23 +12,9 @@ import Formula1Footer from "./components/Location";
 
 function App() {
   
-  useEffect(() => {
-    const handleScroll = () => {
-      const navbar = document.querySelector(".navigation");
-      if (window.scrollY > 50) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div className="bg-black text-secondary h-screen w-full font-f1">
-      <ScrollSpeedIndicator />
+      {/* <ScrollSpeedIndicator /> */}
       {/* <Sidebar /> */}
       <Navbar />
       <Hero />
