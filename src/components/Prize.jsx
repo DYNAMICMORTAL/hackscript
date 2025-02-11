@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { FaTrophy, FaFlagCheckered } from "react-icons/fa";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Confetti from 'react-dom-confetti';
+import Confetti from "react-dom-confetti";
 import { useSpring } from "@react-spring/web";
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 
-const PrizeBox = ({ position, prize, delay, color, isWinning, shouldAnimate }) => {
+const PrizeBox = ({
+  position,
+  prize,
+  delay,
+  color,
+  isWinning,
+  shouldAnimate,
+}) => {
   const [amount, setAmount] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
@@ -19,7 +26,7 @@ const PrizeBox = ({ position, prize, delay, color, isWinning, shouldAnimate }) =
 
   useEffect(() => {
     if (!shouldAnimate) return; // Only animate when section is in view
-    
+
     let intervalId;
     const animatePrize = () => {
       intervalId = setInterval(() => {
@@ -48,11 +55,14 @@ const PrizeBox = ({ position, prize, delay, color, isWinning, shouldAnimate }) =
       className={`relative flex flex-col items-center justify-center text-white p-4 md:p-6 rounded-lg w-full h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 border-4 shadow-lg md:shadow-2xl transition-all duration-300 hover:scale-105 ${color}`}
     >
       <div className="absolute -top-6 md:-top-8">
-        <Confetti active={showConfetti} config={{ elementCount: 30, spread: 50 }} />
+        <Confetti
+          active={showConfetti}
+          config={{ elementCount: 30, spread: 50 }}
+        />
       </div>
 
       <div className="absolute -top-4 md:-top-6 bg-white text-black px-3 py-1 rounded-full font-bold text-sm md:text-xl shadow-md">
-        #{position.split(' ')[0]}
+        #{position.split(" ")[0]}
       </div>
 
       <FaTrophy className="text-3xl md:text-5xl lg:text-7xl mb-1 md:mb-2 animate-float" />
@@ -79,14 +89,18 @@ const Prize = () => {
   const { scrollYProgress } = useScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1.2]);
   const rotate = useTransform(scrollYProgress, [0, 1], [-5, 5]);
-  
+
   const [sectionRef, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
   return (
-    <section id="prizes" ref={sectionRef} className="relative bg-black py-12 md:py-20 text-center text-white overflow-hidden">
+    <section
+      id="prizes"
+      ref={sectionRef}
+      className="relative bg-black py-12 md:py-20 text-center text-white overflow-hidden"
+    >
       {/* Animated Background */}
       <motion.div
         className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black"
@@ -103,7 +117,7 @@ const Prize = () => {
               left: `${(i * 25) % 100}%`,
               top: `${(i * 10) % 100}%`,
               animation: `moveDiagonal 20s linear infinite`,
-              animationDelay: `${i * -2}s`
+              animationDelay: `${i * -2}s`,
             }}
           />
         ))}
@@ -115,7 +129,9 @@ const Prize = () => {
         className="text-2xl md:text-4xl lg:text-6xl font-bold text-red-500 mb-8 md:mb-12 relative z-10 px-4"
       >
         <FaFlagCheckered className="inline mr-2 md:mr-4 text-xl md:text-3xl animate-checkered" />
-        <span className="underline underline-offset-4 text-2xl md:text-4xl md:underline-offset-8">Championship Prizes</span>
+        <span className="underline underline-offset-4 text-2xl md:text-4xl md:underline-offset-8">
+          Championship Prizes
+        </span>
         <FaFlagCheckered className="inline ml-2 md:ml-4 text-xl md:text-3xl animate-checkered" />
       </motion.h2>
 
@@ -182,7 +198,7 @@ const Prize = () => {
             style={{
               left: `${(i * 25) % 100}%`,
               animation: `moveRight 20s linear infinite`,
-              animationDelay: `${i * -2}s`
+              animationDelay: `${i * -2}s`,
             }}
           />
         ))}
@@ -197,7 +213,7 @@ const Prize = () => {
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
             animation: `float 15s infinite ease-in-out`,
-            animationDelay: `${i * 3}s`
+            animationDelay: `${i * 3}s`,
           }}
         />
       ))}

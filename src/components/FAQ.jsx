@@ -6,13 +6,17 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
       className="bg-gray-900 border-2 border-primary rounded-lg p-4 w-full max-w-2xl mx-auto my-4 transition duration-300 cursor-pointer hover:bg-gray-800"
       onClick={onClick}
     >
-      <h4 className="text-red-500 text-lg md:text-xl font-semibold">{question}</h4>
+      <h4 className="text-red-500 text-sm md:text-lg font-semibold">
+        {question}
+      </h4>
       <div
         className={`transition-all duration-500 ease-in-out overflow-hidden ${
           isOpen ? "max-h-[500px] opacity-100 mt-2" : "max-h-0 opacity-0"
         }`}
       >
-        <p className="text-gray-300 text-sm md:text-base overflow-auto">{answer}</p>
+        <p className="text-gray-300 text-sm md:text-base overflow-auto">
+          {answer}
+        </p>
       </div>
     </div>
   );
@@ -68,7 +72,10 @@ const FAQ = () => {
     <section id="faq" className="bg-black text-white py-16 text-center px-4">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 ">
-          🏎️ <span className="underline underline-offset-4 text-2xl md:text-4xl md:underline-offset-8">Frequently Asked Questions</span>
+          🏎️{" "}
+          <span className="underline underline-offset-4 text-2xl md:text-4xl md:underline-offset-8">
+            Frequently Asked Questions
+          </span>
         </h2>
         {faqs.map((faq, idx) => (
           <FAQItem

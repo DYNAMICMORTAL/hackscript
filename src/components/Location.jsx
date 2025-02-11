@@ -3,7 +3,10 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"; // Import soci
 
 const Formula1Footer = () => {
   return (
-    <footer className="bg-black text-white py-10 relative overflow-hidden">
+    <footer
+      id="contact"
+      className="bg-black text-white py-10 relative overflow-hidden"
+    >
       <div className="w-[90%] max-w-5xl mx-auto flex flex-col gap-2 md:flex-row justify-between items-start p-6 bg-opacity-80 bg-gray-900 rounded-2xl shadow-lg transition-transform transform hover:shadow-xl">
         {/* Left Section - Event Info */}
         <div className="w-full md:w-1/2 space-y-4">

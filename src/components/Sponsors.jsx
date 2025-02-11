@@ -27,7 +27,7 @@ export default function Sponsors() {
       <div className="text-xl underline underline-offset-8 mb-5 p-6 pt-10">
         Our Sponsors
       </div>
-      <div className="grid grid-cols-1 p-2 md:p-4 md:grid-cols-2 md:justify-around gap-2 md:gap-4">
+      <div className="w-4/5 flex flex-col p-2 md:p-4 md:flex-row items-center md:justify-around gap-2 md:gap-4">
         {sponsors.map((sponsor, index) => (
           <SponsorCard sponsor={sponsor} key={index} index={index} />
         ))}
