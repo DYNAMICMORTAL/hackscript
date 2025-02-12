@@ -1,5 +1,5 @@
 import React from "react";
-import "./hero.css"; // Assuming you will create a CSS file for styling
+import "./Hero.css"; // Assuming you will create a CSS file for styling
 import Sidebar from "./Sidebar";
 
 const Navbar = () => {
