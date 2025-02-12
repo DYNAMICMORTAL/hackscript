@@ -3,9 +3,9 @@
     padding: 60px 0;
     min-height: 100vh;
 }
-#contact {
-    background: url('../assets/footBack.gif') no-repeat center center/cover;
-}
+/* #contact {
+    background: url('');
+} */
 .race-location-container {
     background-color: #000;
     padding: 60px 0;

@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 @font-face {
   font-family: "Formula1-Regular";
   src: url("../assets/font/Formula1-Regular.otf") format("woff");
@@ -32,7 +31,6 @@ html {
   flex-direction: column;
   cursor: url('./assets/cursor.png') 16 16, auto;
 }
-
 .navigation {
   display: flex;
   flex-direction: row;
@@ -44,13 +42,10 @@ html {
   left: 0;
   z-index: 1000;
   backdrop-filter: blur(5px);
-  /* background-color: rgba(0, 0, 0, 0.5); */
 }
-
 .scrolled {
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 .leftHalf {
   display: flex;
   align-items: center;
@@ -60,7 +55,6 @@ html {
   height: 60px;
   margin-right: 10px;
 }
-
 .Midtext{
   left: 50%;
   position: absolute;
@@ -69,14 +63,12 @@ html {
   justify-content: center;
   align-items: center;
 }
-
 .Midtext .gif {
   height: 45px;
   margin-left: 10px;
   vertical-align: baseline;
   user-select: none;
 }
-
 .byText {
   color: #fff;
   font-family: "Formula1-Regular", sans-serif;
@@ -110,25 +102,20 @@ html {
   align-items: center;
   margin-top: 20px;
 }
-
 .time {
   font-family: "Formula1-Bold", sans-serif;
   font-size: 50px;
   margin: 0 10px;
   text-align: center;
 }
-
 .time span {
   display: block;
   font-size: 20px;
   font-family: "Formula1-Regular", sans-serif;
 }
-
 .registerButtonContainer {
   margin-top: 20px;
 }
-
-
 .registerButton {background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%)}
 .registerButton {
    margin: 10px;
@@ -141,20 +128,17 @@ html {
    border-radius: 10px;
    display: block;
  }
-
  .registerButton:hover {
-   background-position: right center; /* change the direction of the change here */
+   background-position: right center;
    color: #fff;
    text-decoration: none;
  }
-
 .registerButton {
   display: inline-block;
   padding: 10px 20px;
   font-family: "Formula1-Bold", sans-serif;
   font-size: 20px;
 }
-
 .leftHero {
   width: 50vw;
   margin-right: 50px;
@@ -162,7 +146,6 @@ html {
 .rightHero img {
   width: 40vw;
 }
-
 .hero-container {
   background-image: url("../assets/HACKSCRIPT.png");
   background-size: cover;
@@ -174,19 +157,83 @@ html {
   justify-content: center;
   align-items: center;
 }
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+.modal h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.modal-content {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+.modal-content p {
+  font-size: 16px;
+  text-align: left;
+}
+/* .modal-content p br {
+  display: block;
+  margin-bottom: 10em;
+} */
+.closeButton {
+  background: #ff0000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.closeButton:hover {
+  background: #cc0000;
+}
+.registerButton {
+  background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+.registerButton:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
 @media (max-width: 768px) {
   .leftHalf img {
     height: 38px;
     margin-right: 5px;
   }
-
   .Midtext{
     display: none;
   }
   .hero-container {
     min-height: 100vh;
   }
-
   .byText {
     font-size: 1em;
   }

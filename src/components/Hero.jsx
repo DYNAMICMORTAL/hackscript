@@ -19,6 +19,7 @@ export default function Hero() {
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -27,6 +28,14 @@ export default function Hero() {
 
     return () => clearTimeout(timer);
   });
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div className="hero-container">
@@ -57,7 +66,7 @@ export default function Hero() {
             <div className="registerButtonContainer">
               <a href="https://forms.gle/HXeknNFsoy6iWnXe8" className="registerButton">
                 Register Now
-              </a>
+              </button>
             </div>
           </div>
           <div className="rightHero">
@@ -65,10 +74,40 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      {/* <div className="secondSection">
-        <h2 className="community">Our Team</h2>
-        lorem800
-      </div> */}
+
+      {isModalOpen && (
+        <div className="modal-overlay">
+          <div className="modal">
+            <h2>Rules and Conditions</h2>
+            <div className="modal-content">
+              <p>
+              📋 How to Enter the Track (Form Filling Guide):<br></br>
+
+🏎 Team Details:<br></br> Choose your team name (make it race-inspired if you like!) and list all members clearly.<br></br>
+
+🔧 Personal Information:<br></br> Full names, contact numbers, and valid email IDs to keep you updated throughout the event.<br></br>
+
+🏁 College Details:<br></br> Mention your college name, state, and course details accurately.<br></br>
+
+✅ Final Pit Stop:<br></br> Double-check all entries before submitting. Incomplete or incorrect information might slow down your chances of participation.<br></br>
+
+⚠️ Important Notes:<br></br>
+
+👥 Team Size: Minimum 3, maximum 4 members.
+              </p>
+            </div>
+            <button onClick={closeModal} className="closeButton">
+              Close
+            </button>
+            <a
+              href="https://forms.gle/HXeknNFsoy6iWnXe8"
+              className="registerButton"
+            >
+              Register Now
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
