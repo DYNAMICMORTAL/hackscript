@@ -66,7 +66,8 @@ export default function Hero() {
             <div className="registerButtonContainer">
               <a href="https://forms.gle/HXeknNFsoy6iWnXe8" className="registerButton">
                 Register Now
-              </button>
+              {/* </button> */}
+              </a>
             </div>
           </div>
           <div className="rightHero">
