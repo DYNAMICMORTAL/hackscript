@@ -1,0 +1,42 @@
+.banner-container {
+    position: relative;
+    overflow: hidden;
+    background: black;
+    transform: rotate(0deg);
+    padding: 20px 0;
+  }
+  .neon-line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+  } 
+  .neon-purple {
+    top: 0;
+    background: #dc2626;
+  }
+  .neon-green {
+    top: 5px;
+    background: #f6ff00;
+  }
+  .scrolling-text {
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: rotate(-2deg);
+  }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .marquee {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+  }
+  .marquee-item {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: black;
+    margin: 0 15px;
+  }

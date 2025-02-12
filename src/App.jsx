@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Timeline from "./components/Timeline";
 import Location from "./components/Location";
+import ScrollingBanner from "./components/ScrollingBanner";
 import Prize from "./components/Prize";
 import FAQ from "./components/FAQ";
 import ScrollSpeedIndicator from "./components/ScrollSpeedIndicator";
@@ -17,6 +18,7 @@ function App() {
       {/* <Sidebar /> */}
       <Navbar />
       <Hero />
+      <ScrollingBanner />
       <About />
       <Timeline />
       <Prize />
