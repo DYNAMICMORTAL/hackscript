@@ -1,8 +1,19 @@
-/* Location Styles */
 .location, .race-location-container {
     background-color: #000;
     padding: 60px 0;
     min-height: 100vh;
+}
+#contact {
+    background: url('../assets/footBack.gif') no-repeat center center/cover;
+}
+.race-location-container {
+    background-color: #000;
+    padding: 60px 0;
+    min-height: 100vh;
+    background-image: url('../assets/footBack.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .location-content, .race-location-content {

@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"; // Import social media icons
-
+import './Location.css';
 const Formula1Footer = () => {
   return (
     <footer
