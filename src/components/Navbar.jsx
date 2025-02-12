@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
       <div className="Midtext">
         <h3 className="byText">HACKSCRIPT 6.0</h3>
-        <img src="../src/assets/f1pixel1-unscreen.gif" alt="GIF" className="gif" />
+        <img src="/f1pixel1-unscreen.gif" alt="GIF" className="gif" />
       </div>
       <div className="rightHalf">
         <Sidebar />
