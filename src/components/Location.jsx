@@ -24,7 +24,7 @@ const Formula1Footer = () => {
               href="mailto:hackwave@apsit.edu.in"
               className="text-red-500 hover:text-white transition"
             >
-              hackwave@apsit.edu.in
+              hackscript@apsit.edu.in
             </a>
           </p>
           <p className="text-gray-300 text-xs md:text-sm">
@@ -76,21 +76,21 @@ const Formula1Footer = () => {
           </div>
         </div>
 
-        {/* Right Section - Google Map */}
-        <div className="w-full md:w-1/2 mt-6 md:mt-0">
-          <h3 className="text-2xl md:text-3xl font-bold text-red-600 uppercase mb-3">
-            Event Location
-          </h3>
-          <iframe
-            className="w-full h-48 md:h-60 rounded-lg shadow-md"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.329490413092!2d72.96466957441031!3d19.268032481976487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bba2e15f6c7b%3A0x20e1357d640bef7e!2sA.%20P.%20Shah%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1739259488677!5m2!1sen!2sin"
-            allowFullScreen
-            loading="lazy"
-          ></iframe>
-        </div>
-      </div>
+        
+          <div className="w-full md:w-1/2 mt-6 md:mt-0">
+            <h3 className="text-2xl md:text-3xl font-bold text-red-600 uppercase mb-3">
+              Event Location
+            </h3>
+            <iframe
+              className="w-full h-48 md:h-60 rounded-lg shadow-md border-4 border-red-600"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.329490413092!2d72.96466957441031!3d19.268032481976487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bba2e15f6c7b%3A0x20e1357d640bef7e!2sA.%20P.%20Shah%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1739259488677!5m2!1sen!2sin"
+              allowFullScreen
+              loading="lazy"
+            ></iframe>
+          </div>
+              </div>
 
-      {/* Racing Track & Effects */}
+              {/* Racing Track & Effects */}
       <div className="absolute bottom-[-30px] w-full flex justify-center items-center">
         <div
           className="w-[60px] md:w-[80px] h-[30px] md:h-[40px] bg-cover bg-center shadow-lg transform rotate-45 animate-spin"

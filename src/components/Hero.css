@@ -30,6 +30,7 @@ html {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  cursor: url('./assets/cursor.png') 16 16, auto;
 }
 
 .navigation {
@@ -102,7 +103,7 @@ html {
   line-height: 70px;
 }
 .heroSubtitle span{
-  color: #ec1845;
+  color: #dc2626;
 }
 .countdown {
   display: flex;
@@ -165,9 +166,9 @@ html {
 .hero-container {
   background-image: url("../assets/HACKSCRIPT.png");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -183,7 +184,7 @@ html {
     display: none;
   }
   .hero-container {
-    min-height: 0;
+    min-height: 100vh;
   }
 
   .byText {

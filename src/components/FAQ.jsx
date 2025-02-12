@@ -71,11 +71,9 @@ const FAQ = () => {
   return (
     <section id="faq" className="bg-black text-white py-16 text-center px-4">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 ">
-          🏎️{" "}
-          <span className="underline underline-offset-4 text-2xl md:text-4xl md:underline-offset-8">
+        <h2 className="text-2xl md:text-4xl font-bold text-center text-red-500 underline underline-offset-8 mb-10 p-6">
+          
             Frequently Asked Questions
-          </span>
         </h2>
         {faqs.map((faq, idx) => (
           <FAQItem

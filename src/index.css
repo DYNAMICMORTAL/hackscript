@@ -4,7 +4,7 @@
 
 html {
   scroll-behavior: smooth;
-  
+  cursor: url('./assets/cursor.png') 16 16, auto;
 }
 
 @font-face {
@@ -19,6 +19,8 @@ html {
   font-family: "f1-wide";
   src: url("./assets/fonts/Formula1-Wide.woff") format("woff");
 }
+
+
 
 /* Custom F1 Scrollbar CSS */
 ::-webkit-scrollbar {

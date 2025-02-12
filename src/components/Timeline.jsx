@@ -59,9 +59,13 @@ const Timeline = () => {
         <source src={TimelineBg} type="video/mp4" />
       </video>
 
-      <h2 className="text-2xl md:text-4xl font-bold text-center text-primary underline mb-4 md:mb-5">
+      <h2 className="text-2xl md:text-4xl font-bold text-center text-red-500 underline underline-offset-8 mb-10 p-6">
         Hackscript Timeline
       </h2>
+
+      {/* <div className="text-2xl md:text-4xl text-red-500 underline underline-offset-8 mb-5 p-6">
+      Hackscript Timeline
+      </div> */}
 
       <div
         ref={containerRef}
