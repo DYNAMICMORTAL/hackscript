@@ -30,7 +30,6 @@ export default function Hero() {
 
   return (
     <div className="hero-container">
-      
       <div className="verticalDiv">
         <div className="heroSection">
           <div className="leftHero">
@@ -55,7 +54,10 @@ export default function Hero() {
               </div>
             </div>
             <div className="registerButtonContainer">
-              <a href="https://forms.gle/HXeknNFsoy6iWnXe8" className="registerButton">
+              <a
+                href="https://forms.gle/HXeknNFsoy6iWnXe8"
+                className="registerButton"
+              >
                 Register Now
               </a>
             </div>

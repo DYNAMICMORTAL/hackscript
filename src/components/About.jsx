@@ -5,10 +5,10 @@ import "./../index.css";
 
 export default function About() {
   const organizers = [
-    "logos/csa_dept_logo.png",
-    "logos/itsa_dept_logo.png",
-    "logos/ds_dept_logo.png",
-    "logos/aiml_dept_logo.png",
+    "/logos/csa_dept_logo.png",
+    "/logos/itsa_dept_logo.png",
+    "/logos/ds_dept_logo.png",
+    "/logos/aiml_dept_logo.png",
   ];
   return (
     <div
