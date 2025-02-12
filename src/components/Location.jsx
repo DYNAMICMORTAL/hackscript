@@ -28,28 +28,36 @@ const Formula1Footer = () => {
             </a>
           </p>
           <p className="text-gray-300 text-xs md:text-sm">
-            📞 Rohan Waghode:{" "}
+            📞 Gitanjali Salvi:{" "}
             <a
-              href="tel:+917506443811"
+              href="tel:+918446897001"
               className="text-red-500 hover:text-white"
             >
-              +91 75064 43811
+              +91 84468 97001
             </a>{" "}
             <br />
-            📞 Manas Nanivadekar:{" "}
+            📞 Ritik Pandey:{" "}
             <a
-              href="tel:+918104030064"
+              href="tel:+99372904186"
               className="text-red-500 hover:text-white"
             >
-              +91 81040 30064
+              +91 93729 04186
             </a>{" "}
             <br />
-            📞 Athul Nair:{" "}
+            📞 Sanskruti Chavan:{" "}
             <a
-              href="tel:+917718979938"
+              href="tel:+918805305018"
               className="text-red-500 hover:text-white"
             >
-              +91 77189 79938
+              +91 88053 05018
+            </a>
+            <br />
+            📞 Yukti Ogare:{" "}
+            <a
+              href="tel:+919619771624"
+              className="text-red-500 hover:text-white"
+            >
+              +91 96197 71624
             </a>
           </p>
 
