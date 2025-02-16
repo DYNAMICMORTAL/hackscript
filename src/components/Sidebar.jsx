@@ -48,7 +48,7 @@ const Sidebar = () => {
         initial={{ x: "100%" }}
         animate={{ x: isOpen ? 0 : "100%" }}
         transition={{ ease: "easeInOut", duration: 0.5 }}
-        className="fixed top-0 right-0 w-full h-screen bg-background text-secondary flex flex-col justify-center items-center z-40"
+        className="fixed top-0 right-0 w-full h-screen bg-background opacity-85 text-secondary flex flex-col justify-center items-center z-40"
       >
         {/* Navigation Items */}
         <nav className="mt-10 space-y-6 text-2xl font-semibold">

@@ -5,6 +5,7 @@ import "./../index.css";
 
 export default function About() {
   const organizers = [
+    "/logos/iic_logo.png",
     "/logos/csa_dept_logo.png",
     "/logos/itsa_dept_logo.png",
     "/logos/ds_dept_logo.png",
@@ -39,10 +40,14 @@ export default function About() {
       <div className="text-xl underline underline-offset-8 mb-5 p-6">
         Powered By
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 p-6 w-full">
+      <div className="grid grid-cols-2 md:grid-cols-2 gap-5 p-6 w-full">
         {organizers.map((o, idx) => (
           <motion.div
-            className="flex items-center justify-center "
+            className={`flex items-center justify-center ${
+              idx === 0
+                ? "col-span-2 md:col-span-2 md:justify-center"
+                : "col-span-1"
+            }`}
             key={idx}
             initial={{ y: "60%", opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -50,12 +55,14 @@ export default function About() {
               type: "spring",
               duration: 1,
               delay: idx * 0.2,
-              damping: "8",
+              damping: 8,
             }}
           >
             <img
               src={o}
-              className="md:w-32 w-20 hover:scale-105 cursor-pointer transition-all"
+              className={`md:w-32 w-20 hover:scale-105 cursor-pointer transition-all ${
+                idx === 0 && "md:w-44 w-32"
+              }`}
             />
           </motion.div>
         ))}
