@@ -28,12 +28,12 @@ const Formula1Footer = () => {
             </a>
           </p>
           <p className="text-gray-300 text-xs md:text-sm">
-            📞 Gitanjali Salvi:{" "}
+            📞 Abhishek Thormothe:{" "}
             <a
-              href="tel:+918446897001"
+              href="tel:+918369098056"
               className="text-red-500 hover:text-white"
             >
-              +91 84468 97001
+              +91 83690 98056
             </a>{" "}
             <br />
             📞 Ritik Pandey:{" "}
@@ -44,20 +44,20 @@ const Formula1Footer = () => {
               +91 93729 04186
             </a>{" "}
             <br />
-            📞 Sanskruti Chavan:{" "}
+            📞 Shrey Nagda:{" "}
             <a
-              href="tel:+918805305018"
+              href="tel:+919405321984"
               className="text-red-500 hover:text-white"
             >
-              +91 88053 05018
+              +919405321984
             </a>
             <br />
-            📞 Yukti Ogare:{" "}
+            📞 Rishi Mane:{" "}
             <a
-              href="tel:+919619771624"
+              href="tel:+919004913599"
               className="text-red-500 hover:text-white"
             >
-              +91 96197 71624
+              +91 90049 13599
             </a>
           </p>
 
