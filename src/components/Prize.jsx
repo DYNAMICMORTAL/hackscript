@@ -100,9 +100,11 @@ const Prize = () => {
             shouldAnimate={inView}
           />
         </motion.div>
-        <p className="flex items-center justify-center gap-2 text-lg">
-          <FaGift className="text-yellow-400 md:text-3xl text-2xl" /> Exclusive
-          Goodies for Each Participant
+        <p className="flex items-start justify-center md:gap-2 text-lg">
+          <FaGift className="text-yellow-400 md:text-3xl text-2xl" />
+          <p className="text-sm md:text-lg">
+            Exclusive Goodies for Each Participant
+          </p>
         </p>
       </div>
     </section>
