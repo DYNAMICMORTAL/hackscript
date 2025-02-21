@@ -39,7 +39,6 @@ export default function Hero() {
 
   return (
     <div className="hero-container">
-      
       <div className="verticalDiv">
         <div className="heroSection">
           <div className="leftHero">
@@ -79,21 +78,22 @@ export default function Hero() {
         <div className="modal-overlay">
           <div className="modal">
             <h2>Rules and Conditions</h2>
-            <div className="modal-content">
+            <div className="modal-content text-sm leading-6">
               <p>
-              📋 How to Enter the Track (Form Filling Guide):<br></br>
-
-🏎 Team Details:<br></br> Choose your team name (make it race-inspired if you like!) and list all members clearly.<br></br>
-
-🔧 Personal Information:<br></br> Full names, contact numbers, and valid email IDs to keep you updated throughout the event.<br></br>
-
-🏁 College Details:<br></br> Mention your college name, state, and course details accurately.<br></br>
-
-✅ Final Pit Stop:<br></br> Double-check all entries before submitting. Incomplete or incorrect information might slow down your chances of participation.<br></br>
-
-⚠️ Important Notes:<br></br>
-
-👥 Team Size: Minimum 3, maximum 4 members.
+                📋 How to Enter the Track (Form Filling Guide):<br></br>
+                🏎 Team Details:<br></br> Choose your team name (make it
+                race-inspired if you like!) and list all members clearly.
+                <br></br>
+                🔧 Personal Information:<br></br> Full names, contact numbers,
+                and valid email IDs to keep you updated throughout the event.
+                <br></br>
+                🏁 College Details:<br></br> Mention your college name, state,
+                and course details accurately.<br></br>✅ Final Pit Stop:
+                <br></br> Double-check all entries before submitting. Incomplete
+                or incorrect information might slow down your chances of
+                participation.<br></br>
+                ⚠️ Important Notes:<br></br>
+                👥 Team Size: Minimum 3, maximum 4 members.
               </p>
             </div>
             <button onClick={closeModal} className="closeButton">
