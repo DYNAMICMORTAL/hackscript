@@ -52,10 +52,15 @@ export default function About() {
             <p>Innovation in AI</p>
           </motion.div>
         </div>
-        <div className="domainDescText">
+        <motion.div 
+          className="domainDescText"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+        >
           <h2>1Domain</h2>
           <h2>2ProblemStatments</h2>
-        </div>
+        </motion.div>
       </div>
       <Sponsors />
 
