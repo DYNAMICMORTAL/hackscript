@@ -4,6 +4,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaTwitter,
+  FaWhatsapp,
   FaYoutube,
 } from "react-icons/fa"; // Import social media icons
 import "./Location.css";
@@ -88,6 +89,14 @@ const Formula1Footer = () => {
               className="text-red-500 text-2xl hover:text-white transition"
             >
               <FaInstagram />
+            </a>
+            <a
+              href="https://chat.whatsapp.com/L2ibLbXvg0bCyoGtWuCs7e"
+              target="_blank"
+              className="text-red-500 text-2xl hover:text-white transition"
+              
+            >
+              <FaWhatsapp />
             </a>
           </div>
         </div>

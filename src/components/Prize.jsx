@@ -148,7 +148,7 @@ const Prize = () => {
         >
           <div className="absolute bottom-0 w-full h-16 md:h-24 bg-gradient-to-t from-gray-800 to-gray-600" />
           <PrizeBox
-            position="Runner Up"
+            position="RUNNER UP"
             prize={15000}
             delay={500}
             color="border-silver"
@@ -163,10 +163,10 @@ const Prize = () => {
         >
           <div className="absolute bottom-0 w-full h-20 md:h-32 bg-gradient-to-t from-yellow-500 to-red-700" />
           <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-6 md:-translate-y-8 text-2xl md:text-4xl text-yellow-400">
-            🏁
+           
           </div>
           <PrizeBox
-            position="Winner"
+            position="WINNER"
             prize={25000}
             delay={200}
             color="border-gold"
@@ -220,7 +220,6 @@ const Prize = () => {
         />
       ))}
 
-      <p className="text-white">Exciting goodies for each participant</p>
     </section>
   );
 };
