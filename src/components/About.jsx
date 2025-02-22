@@ -16,7 +16,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="mt-[80px] flex flex-col items-center justify-start bg-background p-4 md:p-4 overflow-y-hidden about "
+      className="mt-[80px] flex flex-col items-center justify-start bg-background p-4 md:p-4 overflow-x-hidden overflow-y-hidden about "
     >
       <div className="text-2xl md:text-4xl text-red-500 underline underline-offset-8 mb-10 p-6">
         About Hackscript 6.0
@@ -38,7 +38,7 @@ export default function About() {
         </p>
       </div>
       <div className="text-xl underline underline-offset-8 mb-5 p-6">
-        Our Domains
+        Our Domain
       </div>
       <div className="w-full flex flex-col md:flex-row items-center justify-around gap-3">
         <motion.div
@@ -49,17 +49,6 @@ export default function About() {
         >
           <LuBrainCircuit className="md:text-9xl text-7xl" />
           <p>Innovation in AI & ML</p>
-        </motion.div>
-        <motion.div
-          className="flex flex-col items-center gap-3"
-          initial={{ opacity: 0, x: "60%", scale: 1 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ type: "spring", duration: 0.5, damping: 8 }}
-        >
-          <TbHealthRecognition className="md:text-9xl text-7xl" />
-          <p className="text-center max-w-[200px]">
-            AI powered smart health insurance
-          </p>
         </motion.div>
       </div>
       <Sponsors />
