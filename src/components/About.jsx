@@ -40,27 +40,22 @@ export default function About() {
       <div className="text-xl underline underline-offset-8 mb-5 p-6">
         Our Domains
       </div>
-      <div className="w-full flex flex-col md:flex-row items-center justify-around gap-3">
-        <motion.div
-          className="flex flex-col items-center gap-3"
-          initial={{ opacity: 0, x: "-60%", scale: 1 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ type: "spring", duration: 0.5, damping: 8 }}
-        >
-          <LuBrainCircuit className="md:text-9xl text-7xl" />
-          <p>Innovation in AI & ML</p>
-        </motion.div>
-        <motion.div
-          className="flex flex-col items-center gap-3"
-          initial={{ opacity: 0, x: "60%", scale: 1 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ type: "spring", duration: 0.5, damping: 8 }}
-        >
-          <TbHealthRecognition className="md:text-9xl text-7xl" />
-          <p className="text-center max-w-[200px]">
-            AI powered smart health insurance
-          </p>
-        </motion.div>
+      <div className="domains">
+        <div className="w-full flex flex-col md:flex-row items-center justify-around gap-3 domainIconDiv">
+          <motion.div
+            className="flex flex-col items-center gap-3"
+            initial={{ opacity: 0, x: "-60%", scale: 1 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", duration: 0.5, damping: 8 }}
+          >
+            <LuBrainCircuit className="md:text-9xl text-7xl" />
+            <p>Innovation in AI</p>
+          </motion.div>
+        </div>
+        <div className="domainDescText">
+          <h2>1Domain</h2>
+          <h2>2ProblemStatments</h2>
+        </div>
       </div>
       <Sponsors />
 
