@@ -59,7 +59,7 @@ export default function About() {
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
           <h2>1Domain</h2>
-          <h2>2ProblemStatments</h2>
+          <h2>2ProblemStatements</h2>
         </motion.div>
       </div>
       <Sponsors />
