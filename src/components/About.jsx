@@ -49,7 +49,7 @@ export default function About() {
             transition={{ type: "spring", duration: 0.5, damping: 8 }}
           >
             <img 
-              src="public/logos/domain_ai.png" 
+              src="/logos/domain_ai.png" 
               alt="AI Domain"
               className="w-24 h-24 md:w-40 md:h-40 object-contain" 
             />
