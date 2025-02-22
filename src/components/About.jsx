@@ -37,7 +37,7 @@ export default function About() {
           concept to execution within just 24 hours.
         </p>
       </div>
-      <div className="text-xl underline underline-offset-8 mb-5 p-6">
+      <div className="text-xl underline underline-offset-8 mb-5 mt-3 p-6">
         Our Domain
       </div>
       <div className="domains">
