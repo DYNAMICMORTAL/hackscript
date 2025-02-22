@@ -68,9 +68,6 @@ export default function Hero() {
               </button>
             </div>
           </div>
-          <div className="rightHero">
-            <img src="/heroGIF2.gif" alt="" />
-          </div>
         </div>
       </div>
 
@@ -99,7 +96,7 @@ export default function Hero() {
             <button onClick={closeModal} className="closeButton">
               Close
             </button>
-            <a
+            <a target="_blank"
               href="https://forms.gle/HXeknNFsoy6iWnXe8"
               className="registerButton"
             >

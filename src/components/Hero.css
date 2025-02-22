@@ -96,10 +96,12 @@ html {
 }
 .heroSubtitle span{
   color: #dc2626;
+  
 }
 .countdown {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 20px;
 }
 .time {
@@ -112,6 +114,7 @@ html {
   display: block;
   font-size: 20px;
   font-family: "Formula1-Regular", sans-serif;
+  text-align: center;
 }
 .registerButtonContainer {
   margin-top: 20px;
@@ -142,12 +145,13 @@ html {
 .leftHero {
   width: 50vw;
   margin-right: 50px;
+  text-align: center;
 }
 .rightHero img {
   width: 40vw;
 }
 .hero-container {
-  background-image: url("../assets/HACKSCRIPT.png");
+  background-image: url("../assets/F1-track.jpg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -234,6 +238,7 @@ html {
   }
   .hero-container {
     min-height: 100vh;
+    background-size: cover;
   }
   .byText {
     font-size: 1em;
@@ -271,6 +276,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     text-align: center;
   }
 }
