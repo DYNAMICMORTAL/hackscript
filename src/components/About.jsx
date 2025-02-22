@@ -48,7 +48,11 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: "spring", duration: 0.5, damping: 8 }}
           >
-            <LuBrainCircuit className="md:text-9xl text-7xl" />
+            <img 
+              src="public/logos/domain_ai.png" 
+              alt="AI Domain"
+              className="w-24 h-24 md:w-40 md:h-40 object-contain" 
+            />
             <p>Innovation in AI</p>
           </motion.div>
         </div>
