@@ -16,7 +16,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="mt-[80px] flex flex-col items-center justify-start bg-background p-4 md:p-4 overflow-y-hidden about "
+      className="mt-[80px] flex flex-col items-center justify-start bg-background p-4 md:p-4 overflow-x-hidden overflow-y-hidden about "
     >
       <div className="text-2xl md:text-4xl text-red-500 underline underline-offset-8 mb-10 p-6">
         About Hackscript 6.0
@@ -38,7 +38,7 @@ export default function About() {
         </p>
       </div>
       <div className="text-xl underline underline-offset-8 mb-5 p-6">
-        Our Domains
+        Our Domain
       </div>
       <div className="domains">
         <div className="w-full flex flex-col md:flex-row items-center justify-around gap-3 domainIconDiv">
