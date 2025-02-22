@@ -133,9 +133,13 @@ const Prize = () => {
           Championship Prizes
         </span>
         <FaFlagCheckered className="inline ml-2 md:ml-4 text-xl md:text-3xl animate-checkered" />
+        <div className="text-center w-full md:text-xl text-lg mt-5 text-white">
+          For each problem statement
+        </div>
       </motion.h2>
 
       {/* 3D Podium Structure - Stack vertically on mobile */}
+
       <div className="relative flex flex-col md:flex-row justify-center items-end gap-4 md:gap-8 z-10 perspective-1000 px-4">
         {/* 2nd Place - Mobile first column order */}
         <motion.div
@@ -185,10 +189,6 @@ const Prize = () => {
             shouldAnimate={inView}
           />
         </motion.div> */}
-      </div>
-
-      <div className="absolute z-50 text-center w-full md:text-xl text-lg mt-5 md:mt-0">
-        *For each problem statement
       </div>
 
       {/* Animated Track Elements - Smaller on mobile */}
