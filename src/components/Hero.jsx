@@ -74,6 +74,9 @@ export default function Hero() {
       {isModalOpen && (
         <div className="modal-overlay">
           <div className="modal">
+            <button onClick={closeModal} className="modal-close-btn text-red-500" aria-label="Close modal">
+              &#10005;
+            </button>
             <h2>Rules and Conditions</h2>
             <div className="modal-content text-sm leading-6">
               <p>
@@ -93,9 +96,9 @@ export default function Hero() {
                 👥 Team Size: Minimum 3, maximum 4 members.
               </p>
             </div>
-            <button onClick={closeModal} className="closeButton">
+            {/* <button onClick={closeModal} className="closeButton">
               Close
-            </button>
+            </button> */}
             <a target="_blank"
               href="https://forms.gle/HXeknNFsoy6iWnXe8"
               className="registerButton"
