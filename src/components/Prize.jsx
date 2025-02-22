@@ -103,7 +103,7 @@ const Prize = () => {
     >
       {/* Animated Background */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black"
+        className="absolute inset-0 bg-gradient-to-b from-black to-black"
         style={{ scale, rotate }}
       />
 

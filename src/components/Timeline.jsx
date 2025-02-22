@@ -54,7 +54,7 @@ const Timeline = () => {
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 w-full h-full object-cover opacity-15"
+        className="absolute top-0 left-0 w-full h-full object-cover opacity-10"
       >
         <source src={TimelineBg} type="video/mp4" />
       </video>
