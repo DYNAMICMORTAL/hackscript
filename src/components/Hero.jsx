@@ -3,7 +3,7 @@ import "./Hero.css";
 
 export default function Hero() {
   const calculateTimeLeft = () => {
-    const difference = +new Date("2025-03-07T08:00:00") - +new Date();
+    const difference = +new Date("2025-03-08T08:00:00") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -48,6 +48,8 @@ export default function Hero() {
                 FULL <span>THROTTLE!</span>
               </h3>
             </div>
+            <div className="heroTimer">
+            <h4 className="starts">The Final Race starts in</h4>
             <div className="countdown">
               <div className="time">
                 {timeLeft.days} <span>Days</span>
@@ -61,6 +63,7 @@ export default function Hero() {
               <div className="time">
                 {timeLeft.seconds} <span>Seconds</span>
               </div>
+            </div>
             </div>
             <div className="registerButtonContainer">
               <button onClick={openModal} className="registerButton">
