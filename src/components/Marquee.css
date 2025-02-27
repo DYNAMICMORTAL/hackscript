@@ -1,0 +1,25 @@
+.marquee-container {
+    width: 100%;
+    /* background-color: #cf7db8; */
+    background-color: red;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  marquee {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 768px) {
+    .marquee-container {
+      font-size: 1rem;
+    }
+  }
